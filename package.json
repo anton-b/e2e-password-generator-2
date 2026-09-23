@@ -1,0 +1,32 @@
+{
+  "name": "passgen",
+  "version": "1.0.0",
+  "description": "Cryptographically secure CLI password generator with configurable options",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "passgen": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "cli",
+    "security",
+    "crypto"
+  ],
+  "author": "Anton Benkevich",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
